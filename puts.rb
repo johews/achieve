@@ -1,1 +1,1 @@
-puts "o"
+puts "b"
