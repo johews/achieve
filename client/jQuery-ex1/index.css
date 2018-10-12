@@ -1,0 +1,25 @@
+.tab {
+    overflow:hidden;
+    margin:0;
+    list-style: none;
+}
+.tab li {
+    padding:5px 25px;
+    background-color: #ccc;
+    margin-right: 1px;
+    float: left;
+}
+.tab li .select {
+    background-color: #eee;
+}
+.content {
+    margin: 0;
+    list-style: none;
+}
+.content li {
+    padding: 20px;
+    background-color: #eee;
+}
+.hide {
+    display: none;
+}

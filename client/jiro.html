@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>jQuery入門</title>
+    </head>
+    <body>
+        <h1>jQueryについて</h1>
+        <p>jQueryは、世界中でもっとの広く用いられているライブラリである。</p>
+        <p>jQueryについては・・・</p>
+        <script src=></script>
+        <script>
+            $(function(){
+                $('p').on('mouseenter',function(){
+                    $('this').css('background-color','yellowgreen');
+                })
+                .on('mouseleave',function(){
+                    $('this').css('background-color','transparent');
+                });
+            $('table').find('td').on('click',function(){
+                const $this=$(this);
+                $this.closest('table').find('td')
+                .css('background-color','transparent');
+                $this.css('background-color','yellowgreen');
+            });
+            $('table').find('td').data('count',0).on('click',function(){
+                const $this=$(this);
+                let number=$this.data('count')+1;
+                $this.data('count',number)
+                     .text(number);
+            });
+            });
+        </script>
+    </body>
+</html>
